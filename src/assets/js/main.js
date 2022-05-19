@@ -13,6 +13,21 @@ closeMenu.addEventListener('click', ()=>{
     navMenu.classList.remove('show')
 })
 
-/*===== REMOVE MENU MOBILE =====*/
+/*===== MOUSE MOVE IMG =====*/
+document.addEventListener('mousemove', move);
+function move(e){
+    this.querySelectorAll('.move').forEach(layer =>{
+        const speed = layer.getAttribute('data-speed')
 
-/*===== SCROLL REVEAL ANIMATION =====*/
+        const x = (window.innerWidth - e.pageX*speed)/120
+        const y = (window.innerHeight - e.pageY*speed)/120
+
+        layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+    })
+}
+
+/*===== GSAP ANIMATION =====*/
+
+/*===== nav =====*/
+
+/*===== home =====*/
