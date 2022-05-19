@@ -1,34 +1,66 @@
 /*===== GOOGLE FONTS =====*/
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 /*===== VARIABLES =====*/
-
 :root {
-    --header-height: ;
+    --header-height: 3rem;
 
     /*===== colors =====*/
-    --first-color: ;
-    --first-color-dark: ;
-    --first-color-darken: ;
-    --white-color: ;
+    --first-color: #FCA4A6;
+    --first-color-dark: #C1576A;
+    --first-color-darken: #A83E51;
+    --white-color: #FCF8F8;
 
     /*===== font && typo =====*/
-    --body-font: ;
-    --big-font-size: ;
-    --normal-font-size: ;
+    --body-font: 'Poppins', sans-serif;
+    --big-font-size: 2.5rem;
+    --normal-font-size: .938rem;
 
     /*===== z-index =====*/
-    --z-fixed: ;
+    --z-fixed: 100;
 }
 
 @media screen and (min-width: 768px) {
     :root {
-        --big-font-size: ;
-        --normal-font-size: ;
+        --big-font-size: 5rem;
+        --normal-font-size: 1rem;
     }
 }
 
 /*===== BASE =====*/
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: var(--header-height) 0 0 0;
+    padding: 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+}
+
+h1,
+p,
+ul {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 /*===== LAYOUT =====*/
 
