@@ -190,3 +190,56 @@ img {
 }
 
 /*===== BREAKPOINTS =====*/
+@media screen and (min-width: 768px) {
+    body {
+        margin: 0;
+    }
+    .nav {
+        height: calc(var(--header-height) + 1.5rem);
+    }
+    .nav__toggle,
+    .nav__close {
+        display: none;
+    }
+    .nav__list {
+        display: flex;
+    }
+    .nav__item {
+        margin-left: 3rem;
+        margin-bottom: 0;
+    }
+    .home__container {
+        height: 100vh;
+        grid-template-columns: repeat(2, max-content);
+        grid-template-rows: 1fr;
+        row-gap: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .home__img {
+        order: 1;
+        width: 375px;
+        height: 289px;
+    }
+    .home__img img {
+        width: 375px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .bd-grid {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .home__container {
+        justify-content: initial;
+        column-gap: 4.5rem;
+    }
+    .home__img {
+        width: 604px;
+        height: 466px;
+    }
+    .home__img img {
+        width: 604px;
+    }
+}
