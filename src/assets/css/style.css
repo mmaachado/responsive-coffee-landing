@@ -1,0 +1,41 @@
+/*===== GOOGLE FONTS =====*/
+
+
+/*===== VARIABLES =====*/
+
+:root {
+    --header-height: ;
+
+    /*===== colors =====*/
+    --first-color: ;
+    --first-color-dark: ;
+    --first-color-darken: ;
+    --white-color: ;
+
+    /*===== font && typo =====*/
+    --body-font: ;
+    --big-font-size: ;
+    --normal-font-size: ;
+
+    /*===== z-index =====*/
+    --z-fixed: ;
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        --big-font-size: ;
+        --normal-font-size: ;
+    }
+}
+
+/*===== BASE =====*/
+
+/*===== LAYOUT =====*/
+
+/*===== NAV =====*/
+
+/* show menu */
+
+/*===== HOME =====*/
+
+/*===== BREAKPOINTS =====*/
